@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FileKit",
+        "repositoryURL": "https://github.com/nvzqz/FileKit.git",
+        "state": {
+          "branch": null,
+          "revision": "93505a1ad04b4a2de01abd751ace4f05c6db16a5",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "SWXMLHash",
+        "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
+        "state": {
+          "branch": null,
+          "revision": "49dee5d3c448685ca3f511792f5b679423d36475",
+          "version": "4.2.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
