@@ -24,6 +24,10 @@
 		3B52F2351F8240D900D595DB /* Reboot.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */; };
 		3B52F2381F8241C800D595DB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2361F82413B00D595DB /* DataModel.swift */; };
 		3B52F23A1F82421C00D595DB /* DataModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2391F82421C00D595DB /* DataModelError.swift */; };
+		3B52F23C1F824A4400D595DB /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F23B1F824A4400D595DB /* Entity.swift */; };
+		3B52F23E1F82592900D595DB /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F23D1F82592900D595DB /* Attribute.swift */; };
+		3B52F2401F82594400D595DB /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F23F1F82594400D595DB /* Relationship.swift */; };
+		3B52F2421F825B5F00D595DB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2411F825B5F00D595DB /* Tools.swift */; };
 		OBJ_100 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SWXMLHash::SWXMLHash::Product" /* SWXMLHash.framework */; };
 		OBJ_101 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FileKit::FileKit::Product" /* FileKit.framework */; };
 		OBJ_108 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SWXMLHash+TypeConversion.swift */; };
@@ -122,6 +126,10 @@
 		3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reboot.xcdatamodel; sourceTree = "<group>"; };
 		3B52F2361F82413B00D595DB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3B52F2391F82421C00D595DB /* DataModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelError.swift; sourceTree = "<group>"; };
+		3B52F23B1F824A4400D595DB /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		3B52F23D1F82592900D595DB /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		3B52F23F1F82594400D595DB /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		3B52F2411F825B5F00D595DB /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		"DataModelKit::DataModelKit::Product" /* DataModelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DataModelKit::DataModelKitTests::Product" /* DataModelKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataModelKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -335,6 +343,10 @@
 				OBJ_9 /* DataModelKit.swift */,
 				3B52F2361F82413B00D595DB /* DataModel.swift */,
 				3B52F2391F82421C00D595DB /* DataModelError.swift */,
+				3B52F23B1F824A4400D595DB /* Entity.swift */,
+				3B52F23F1F82594400D595DB /* Relationship.swift */,
+				3B52F23D1F82592900D595DB /* Attribute.swift */,
+				3B52F2411F825B5F00D595DB /* Tools.swift */,
 			);
 			name = DataModelKit;
 			path = Sources/DataModelKit;
@@ -575,7 +587,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				3B52F23E1F82592900D595DB /* Attribute.swift in Sources */,
+				3B52F2401F82594400D595DB /* Relationship.swift in Sources */,
+				3B52F23C1F824A4400D595DB /* Entity.swift in Sources */,
 				OBJ_98 /* DataModelKit.swift in Sources */,
+				3B52F2421F825B5F00D595DB /* Tools.swift in Sources */,
 				3B52F23A1F82421C00D595DB /* DataModelError.swift in Sources */,
 				3B52F2381F8241C800D595DB /* DataModel.swift in Sources */,
 			);

@@ -11,4 +11,6 @@ enum DataModelError: Error {
   case targetIsNotAnXcdataModel
   case targetHaveNotContent
   case targetIsNotReadable
+
+  case parserEntityError
 }

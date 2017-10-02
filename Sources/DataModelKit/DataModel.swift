@@ -11,7 +11,8 @@ import SWXMLHash
 
 struct DataModel {
   private let path: Path
-  private let data: XMLIndexer
+  private let root: XMLIndexer
+  private let entities: [Entity]
   
   init(with path:String) throws {
     let resolvedPath = Path(path).resolved
@@ -27,6 +28,7 @@ struct DataModel {
       throw DataModelError.targetIsNotReadable
     }
     self.path = resolvedPath
-    self.data = SWXMLHash.parse(data)
+    self.root = SWXMLHash.parse(data)
+    self.entities = try self.root["model"]["entity"].all.flatMap { try? Entity(with: $0) }
   }
 }
