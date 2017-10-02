@@ -13,8 +13,8 @@ struct DataModel {
   private let path: Path
   private let root: XMLIndexer
   private let entities: [Entity]
-  
-  init(with path:String) throws {
+
+  init(with path: String) throws {
     let resolvedPath = Path(path).resolved
     let file = File<Data>.init(path: resolvedPath + "contents")
 
@@ -27,8 +27,9 @@ struct DataModel {
     guard let data = try? file.read() else {
       throw DataModelError.targetIsNotReadable
     }
+
     self.path = resolvedPath
     self.root = SWXMLHash.parse(data)
-    self.entities = try self.root["model"]["entity"].all.flatMap { try? Entity(with: $0) }
+    self.entities = self.root["model"]["entity"].all.flatMap { try? Entity(with: $0) }
   }
 }

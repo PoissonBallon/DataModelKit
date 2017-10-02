@@ -14,12 +14,12 @@ struct Entity {
 }
 
 extension Entity {
+  
   init(with node: XMLIndexer) throws {
     guard let name = node.element?.attribute(by: "name")?.text else {
-      throw DataModelError.parserEntityError
+      throw DataModelError.parserEntityNameError
     }
     self.name = name
-    
     self.attributes = try node.byKey("attribute").all.flatMap { try Attribute(with: $0) }
   }
 }

@@ -28,6 +28,7 @@
 		3B52F23E1F82592900D595DB /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F23D1F82592900D595DB /* Attribute.swift */; };
 		3B52F2401F82594400D595DB /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F23F1F82594400D595DB /* Relationship.swift */; };
 		3B52F2421F825B5F00D595DB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2411F825B5F00D595DB /* Tools.swift */; };
+		3BD2959A1F82DE1B0081F9BA /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD295981F82DCA80081F9BA /* UserInfo.swift */; };
 		OBJ_100 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SWXMLHash::SWXMLHash::Product" /* SWXMLHash.framework */; };
 		OBJ_101 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FileKit::FileKit::Product" /* FileKit.framework */; };
 		OBJ_108 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SWXMLHash+TypeConversion.swift */; };
@@ -130,6 +131,7 @@
 		3B52F23D1F82592900D595DB /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		3B52F23F1F82594400D595DB /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 		3B52F2411F825B5F00D595DB /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		3BD295981F82DCA80081F9BA /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		"DataModelKit::DataModelKit::Product" /* DataModelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DataModelKit::DataModelKitTests::Product" /* DataModelKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataModelKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,7 +297,7 @@
 			path = ".build/checkouts/FileKit.git--4494504688477027967/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -304,7 +306,6 @@
 				OBJ_13 /* Dependencies */,
 				OBJ_55 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* SWXMLHash 4.2.3 */ = {
@@ -347,6 +348,7 @@
 				3B52F23F1F82594400D595DB /* Relationship.swift */,
 				3B52F23D1F82592900D595DB /* Attribute.swift */,
 				3B52F2411F825B5F00D595DB /* Tools.swift */,
+				3BD295981F82DCA80081F9BA /* UserInfo.swift */,
 			);
 			name = DataModelKit;
 			path = Sources/DataModelKit;
@@ -359,6 +361,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "DataModelKit" */;
 			buildPhases = (
+				3BD2959B1F82E0140081F9BA /* ⚠️SwiftLint */,
 				OBJ_97 /* Sources */,
 				OBJ_99 /* Frameworks */,
 			);
@@ -481,7 +484,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -497,6 +500,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BD2959B1F82E0140081F9BA /* ⚠️SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚠️SwiftLint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_107 /* Sources */ = {
@@ -591,6 +611,7 @@
 				3B52F2401F82594400D595DB /* Relationship.swift in Sources */,
 				3B52F23C1F824A4400D595DB /* Entity.swift in Sources */,
 				OBJ_98 /* DataModelKit.swift in Sources */,
+				3BD2959A1F82DE1B0081F9BA /* UserInfo.swift in Sources */,
 				3B52F2421F825B5F00D595DB /* Tools.swift in Sources */,
 				3B52F23A1F82421C00D595DB /* DataModelError.swift in Sources */,
 				3B52F2381F8241C800D595DB /* DataModel.swift in Sources */,

@@ -12,7 +12,7 @@ extension String {
     switch self {
     case "True", "true", "yes", "1", "y", "YES", "TRUE":
       return true
-    case "False", "false", "no", "0","n","FALSE","NO":
+    case "False", "false", "no", "0", "n", "FALSE","NO":
       return false
     default:
       return false

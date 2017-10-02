@@ -8,9 +8,20 @@
 import Foundation
 
 enum DataModelError: Error {
+  
+  // MARK: Target Reader Error
   case targetIsNotAnXcdataModel
   case targetHaveNotContent
   case targetIsNotReadable
-
-  case parserEntityError
+  
+  // MARK: Parser Entity Error
+  case parserEntityNameError
+  
+  // MARK: Parser Attribute Error
+  case parserAttributeNameError
+  case parserAttributeTypeError
+  
+  // MARK: Parser UserInfo Error
+  case parserUserInfoKeyError
+  case parserUserInfoValueError
 }

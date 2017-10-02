@@ -14,30 +14,24 @@ struct Attribute {
   let indexed: Bool
   let defaultValue: String?
   let type: String
-  let userInfo:[UserInfo]?
+  let userInfo: [UserInfo]
 }
 
 extension Attribute {
   
   init(with node: XMLIndexer) throws {
-    self.name = try node.byKey("name").value()
-    
-    if let optional: String = try? node.byKey("optional").value() {
-      self.optional = optional.toBool()
-    } else { self.optional = false }
-    
-    if let indexed: String = try? node.byKey("indexed").value() {
-      self.indexed = indexed.toBool()
-    } else { self.indexed = false }
-    
-    self.defaultValue =  try? node.byKey("defaultValueString").value()
-    self.type = try node.byKey("attributeType").value()
-    
-    self.userInfo = try? node.byKey("userInfo").children.flatMap {
-      let key: String = $0.value(ofAttribute: "key")!
-      let value:String = $0.value(ofAttribute: "value")!
-      return (key,value)
+    guard let name = node.element?.attribute(by: "name")?.text else {
+      throw DataModelError.parserAttributeNameError
     }
+    guard let type = node.element?.attribute(by: "attributeType")?.text else {
+      throw DataModelError.parserAttributeTypeError
+    }
+    
+    self.name = name
+    self.type = type
+    self.optional = node.element?.attribute(by: "optional")?.text.toBool() ?? false
+    self.indexed = node.element?.attribute(by: "indexed")?.text.toBool() ?? false
+    self.defaultValue = node.element?.attribute(by: "defaultValueString")?.text
+    self.userInfo = node["userInfo"].children.flatMap { try? UserInfo.init(with: $0) }
   }
-  
 }

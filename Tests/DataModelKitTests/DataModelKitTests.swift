@@ -5,7 +5,7 @@ import XCTest
 
 class DataModelKitTests: XCTestCase {
   
-  static let pathTest = "/Users/allanvialatte/Developer/github-poissonballon-2016/DataModelKit/Tests/RessourcesTest/Reboot.xcdatamodel"
+  static let pathTest = "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Tests/RessourcesTest/Reboot.xcdatamodel"
   
   func testOpen() {
     let model = try! DataModel(with: DataModelKitTests.pathTest)
