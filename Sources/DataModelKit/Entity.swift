@@ -10,6 +10,11 @@ import SWXMLHash
 
 public struct Entity {
   let name: String
+
+  let documentVersion: String
+  let systemVersion: String
+  let minimumToolsVersion: String
+  let lastSavedToolsVersion: String
   let attributes: [Attribute]
 }
 
@@ -20,6 +25,10 @@ extension Entity {
       throw DataModelError.parserEntityNameError
     }
     self.name = name
-    self.attributes = try node.byKey("attribute").all.flatMap { try Attribute(with: $0) }
+    self.documentVersion = node.element?.attribute(by: "documentVersion")?.text ?? ""
+    self.systemVersion = node.element?.attribute(by: "systemVersion")?.text ?? ""
+    self.minimumToolsVersion = node.element?.attribute(by: "minimumToolsVersion")?.text ?? ""
+    self.lastSavedToolsVersion = node.element?.attribute(by: "lastSavedToolsVersion")?.text ?? ""
+    self.attributes = node["attribute"].children.flatMap { try? Attribute.init(with: $0) }
   }
 }
