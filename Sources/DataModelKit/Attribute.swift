@@ -8,7 +8,7 @@
 import Foundation
 import SWXMLHash
 
-struct Attribute {
+public struct Attribute {
   let name: String
   let optional: Bool
   let indexed: Bool

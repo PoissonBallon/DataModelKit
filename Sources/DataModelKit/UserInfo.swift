@@ -8,7 +8,7 @@
 import Foundation
 import SWXMLHash
 
-struct UserInfo {
+public struct UserInfo {
   let key: String
   let value: String
 }

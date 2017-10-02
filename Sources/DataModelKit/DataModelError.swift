@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DataModelError: Error {
+public enum DataModelError: Error {
   
   // MARK: Target Reader Error
   case targetIsNotAnXcdataModel

@@ -9,11 +9,12 @@ import Foundation
 import FileKit
 import SWXMLHash
 
-struct DataModel {
+public struct DataModel {
+  let entities: [Entity]
+  
   private let path: Path
   private let root: XMLIndexer
-  private let entities: [Entity]
-
+  
   init(with path: String) throws {
     let resolvedPath = Path(path).resolved
     let file = File<Data>.init(path: resolvedPath + "contents")

@@ -8,7 +8,7 @@
 import Foundation
 import SWXMLHash
 
-struct Entity {
+public struct Entity {
   let name: String
   let attributes: [Attribute]
 }

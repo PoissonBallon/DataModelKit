@@ -1,3 +1,3 @@
-struct DataModelKit {
+public struct DataModelKit {
   static let dataModelExtension = "xcdatamodel"
 }
