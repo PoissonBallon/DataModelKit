@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3B52F2351F8240D900D595DB /* Reboot.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */; };
+		3B52F2381F8241C800D595DB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2361F82413B00D595DB /* DataModel.swift */; };
+		3B52F23A1F82421C00D595DB /* DataModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2391F82421C00D595DB /* DataModelError.swift */; };
 		OBJ_100 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SWXMLHash::SWXMLHash::Product" /* SWXMLHash.framework */; };
 		OBJ_101 /* FileKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "FileKit::FileKit::Product" /* FileKit.framework */; };
 		OBJ_108 /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* SWXMLHash+TypeConversion.swift */; };
@@ -71,42 +74,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3B52F2271F823F7800D595DB /* PBXContainerItemProxy */ = {
+		3B52F22D1F82404A00D595DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "DataModelKit::DataModelKit";
 			remoteInfo = DataModelKit;
 		};
-		3B52F2281F823F7800D595DB /* PBXContainerItemProxy */ = {
+		3B52F22E1F82404A00D595DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SWXMLHash::SWXMLHash";
 			remoteInfo = SWXMLHash;
 		};
-		3B52F2291F823F7800D595DB /* PBXContainerItemProxy */ = {
+		3B52F22F1F82404A00D595DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "FileKit::FileKit";
 			remoteInfo = FileKit;
 		};
-		3B52F22A1F823F7800D595DB /* PBXContainerItemProxy */ = {
+		3B52F2301F82404A00D595DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SWXMLHash::SWXMLHash";
 			remoteInfo = SWXMLHash;
 		};
-		3B52F22B1F823F7800D595DB /* PBXContainerItemProxy */ = {
+		3B52F2311F82404A00D595DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "FileKit::FileKit";
 			remoteInfo = FileKit;
 		};
-		3B52F22C1F823F7900D595DB /* PBXContainerItemProxy */ = {
+		3B52F2321F82404A00D595DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -116,7 +119,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"DataModelKit::DataModelKit::Product" /* DataModelKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DataModelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reboot.xcdatamodel; sourceTree = "<group>"; };
+		3B52F2361F82413B00D595DB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		3B52F2391F82421C00D595DB /* DataModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelError.swift; sourceTree = "<group>"; };
+		"DataModelKit::DataModelKit::Product" /* DataModelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataModelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DataModelKit::DataModelKitTests::Product" /* DataModelKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DataModelKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* DataModelKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelKitTests.swift; sourceTree = "<group>"; };
@@ -201,9 +207,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B52F2331F8240D900D595DB /* RessourcesTest */ = {
+			isa = PBXGroup;
+			children = (
+				3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */,
+			);
+			name = RessourcesTest;
+			path = Tests/RessourcesTest;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3B52F2331F8240D900D595DB /* RessourcesTest */,
 				OBJ_11 /* DataModelKitTests */,
 			);
 			name = Tests;
@@ -317,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* DataModelKit.swift */,
+				3B52F2361F82413B00D595DB /* DataModel.swift */,
+				3B52F2391F82421C00D595DB /* DataModelError.swift */,
 			);
 			name = DataModelKit;
 			path = Sources/DataModelKit;
@@ -525,6 +543,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_65 /* Package.swift in Sources */,
+				3B52F2351F8240D900D595DB /* Reboot.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +576,8 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_98 /* DataModelKit.swift in Sources */,
+				3B52F23A1F82421C00D595DB /* DataModelError.swift in Sources */,
+				3B52F2381F8241C800D595DB /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,32 +587,32 @@
 		OBJ_102 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SWXMLHash::SWXMLHash" /* SWXMLHash */;
-			targetProxy = 3B52F2281F823F7800D595DB /* PBXContainerItemProxy */;
+			targetProxy = 3B52F22E1F82404A00D595DB /* PBXContainerItemProxy */;
 		};
 		OBJ_103 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "FileKit::FileKit" /* FileKit */;
-			targetProxy = 3B52F2291F823F7800D595DB /* PBXContainerItemProxy */;
+			targetProxy = 3B52F22F1F82404A00D595DB /* PBXContainerItemProxy */;
 		};
 		OBJ_155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DataModelKit::DataModelKitTests" /* DataModelKitTests */;
-			targetProxy = 3B52F22C1F823F7900D595DB /* PBXContainerItemProxy */;
+			targetProxy = 3B52F2321F82404A00D595DB /* PBXContainerItemProxy */;
 		};
 		OBJ_88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DataModelKit::DataModelKit" /* DataModelKit */;
-			targetProxy = 3B52F2271F823F7800D595DB /* PBXContainerItemProxy */;
+			targetProxy = 3B52F22D1F82404A00D595DB /* PBXContainerItemProxy */;
 		};
 		OBJ_90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SWXMLHash::SWXMLHash" /* SWXMLHash */;
-			targetProxy = 3B52F22A1F823F7800D595DB /* PBXContainerItemProxy */;
+			targetProxy = 3B52F2301F82404A00D595DB /* PBXContainerItemProxy */;
 		};
 		OBJ_92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "FileKit::FileKit" /* FileKit */;
-			targetProxy = 3B52F22B1F823F7800D595DB /* PBXContainerItemProxy */;
+			targetProxy = 3B52F2311F82404A00D595DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
