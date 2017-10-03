@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3B52F2351F8240D900D595DB /* Reboot.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */; };
+		3B52F2351F8240D900D595DB /* Sample.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2341F8240D900D595DB /* Sample.xcdatamodel */; };
 		3B52F2381F8241C800D595DB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2361F82413B00D595DB /* DataModel.swift */; };
 		3B52F23A1F82421C00D595DB /* DataModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F2391F82421C00D595DB /* DataModelError.swift */; };
 		3B52F23C1F824A4400D595DB /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52F23B1F824A4400D595DB /* Entity.swift */; };
@@ -124,7 +124,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reboot.xcdatamodel; sourceTree = "<group>"; };
+		3B52F2341F8240D900D595DB /* Sample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample.xcdatamodel; sourceTree = "<group>"; };
 		3B52F2361F82413B00D595DB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3B52F2391F82421C00D595DB /* DataModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelError.swift; sourceTree = "<group>"; };
 		3B52F23B1F824A4400D595DB /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		3B52F2331F8240D900D595DB /* RessourcesTest */ = {
 			isa = PBXGroup;
 			children = (
-				3B52F2341F8240D900D595DB /* Reboot.xcdatamodel */,
+				3B52F2341F8240D900D595DB /* Sample.xcdatamodel */,
 			);
 			name = RessourcesTest;
 			path = Tests/RessourcesTest;
@@ -575,7 +575,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_65 /* Package.swift in Sources */,
-				3B52F2351F8240D900D595DB /* Reboot.xcdatamodel in Sources */,
+				3B52F2351F8240D900D595DB /* Sample.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

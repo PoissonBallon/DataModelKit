@@ -29,6 +29,6 @@ extension Entity {
     self.systemVersion = node.element?.attribute(by: "systemVersion")?.text ?? ""
     self.minimumToolsVersion = node.element?.attribute(by: "minimumToolsVersion")?.text ?? ""
     self.lastSavedToolsVersion = node.element?.attribute(by: "lastSavedToolsVersion")?.text ?? ""
-    self.attributes = node["attribute"].children.flatMap { try? Attribute.init(with: $0) }
+    self.attributes = node["attribute"].all.flatMap { try? Attribute.init(with: $0) }
   }
 }

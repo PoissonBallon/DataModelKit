@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Article" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bitly" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countrycode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCArticleFlag"/>
+                <entry key="enumValues" value="BCNone,BCPopular,BCCrush"/>
+                <entry key="JSONValues" value="0,1,2"/>
+            </userInfo>
+        </attribute>
+        <attribute name="gender" attributeType="Integer 32" defaultValueString="1" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCGender"/>
+                <entry key="enumValues" value="BCMale,BCFemale"/>
+                <entry key="JSONValues" value="1,2"/>
+            </userInfo>
+        </attribute>
+        <attribute name="identifier" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="layout" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="origin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="published" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="slug" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spicy" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCArticleStatus"/>
+                <entry key="enumValues" value="BCNew,BCRejected,BCPromoted,BCRefused,BCValidated,BCPrivacy,BCAutopilot,BCDeleted,BCScheduled,BCToCheck"/>
+                <entry key="JSONValues" value="0,1,2,3,4,5,6,7,8,9"/>
+            </userInfo>
+        </attribute>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCArticleType"/>
+                <entry key="enumValues" value="BCClassic,BCBlog,BCPhoto,BCHisto,BCWorld,BCConfession,BCIllustrated,BCPeople,BCNews"/>
+                <entry key="JSONValues" value="1,2,3,4,5,6,7,8,9"/>
+            </userInfo>
+        </attribute>
+        <attribute name="updated" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="user" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="vote" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleImage" syncable="YES"/>
+        <relationship name="paragraphs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArticleParagraph" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttribute" value="identifier"/>
+        </userInfo>
+    </entity>
+    <entity name="ArticleImage" syncable="YES">
+        <attribute name="copyright" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="legend" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" attributeType="String" syncable="YES"/>
+        <attribute name="usage" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCImageUsage"/>
+                <entry key="enumValues" value="BCIllustration,BCPrimary"/>
+                <entry key="JSONValues" value="1,2"/>
+            </userInfo>
+        </attribute>
+        <userInfo>
+            <entry key="identityAttribute" value="url"/>
+        </userInfo>
+    </entity>
+    <entity name="ArticleParagraph" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="type" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCArticleParagraphType"/>
+                <entry key="enumValues" value="BCArticle,BCHtml"/>
+                <entry key="JSONValues" value="article,html"/>
+            </userInfo>
+        </attribute>
+        <relationship name="article" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Article" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttribute" value="identifier"/>
+        </userInfo>
+    </entity>
+    <entity name="Author" syncable="YES">
+        <attribute name="avatar" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="blocked" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="relation" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCRelation"/>
+                <entry key="enumValues" value="BCCouple,BCSingle,BCComplicated"/>
+                <entry key="JSONValues" value="couple,single,complicated"/>
+            </userInfo>
+        </attribute>
+        <attribute name="username" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttribute" value="identifier"/>
+        </userInfo>
+    </entity>
+    <entity name="Avatar" syncable="YES">
+        <attribute name="identifier" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" attributeType="String" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttribute" value="identifier"/>
+        </userInfo>
+    </entity>
+    <entity name="Comment" syncable="YES">
+        <attribute name="article" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="identifier" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="isModerator" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="parent" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="report" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES">
+            <userInfo>
+                <entry key="enumType" value="BCCommentStatus"/>
+                <entry key="enumValues" value="BCUnknown,BCHighlighted,BCNuked,BCConfession,BCDeleted"/>
+                <entry key="JSONValues" value="0,1,2,3,4"/>
+            </userInfo>
+        </attribute>
+        <attribute name="thumbdown" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="thumbup" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="author" maxCount="1" deletionRule="Nullify" destinationEntity="Author" syncable="YES"/>
+        <relationship name="replies" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" syncable="YES"/>
+        <userInfo>
+            <entry key="identityAttribute" value="identifier"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="Article" positionX="-396" positionY="567" width="128" height="390"/>
+        <element name="ArticleImage" positionX="-254" positionY="636" width="128" height="120"/>
+        <element name="Author" positionX="-425" positionY="342" width="128" height="165"/>
+        <element name="Avatar" positionX="-576" positionY="306" width="128" height="90"/>
+        <element name="Comment" positionX="-281" positionY="99" width="128" height="225"/>
+        <element name="ArticleParagraph" positionX="-414" positionY="225" width="128" height="105"/>
+    </elements>
+</model>

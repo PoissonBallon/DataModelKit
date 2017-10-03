@@ -11,8 +11,7 @@ import SWXMLHash
 
 public struct DataModel {
   let entities: [Entity]
-  
-  private let path: Path
+  let path: Path
   private let root: XMLIndexer
   
   init(with path: String) throws {
