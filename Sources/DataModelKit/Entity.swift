@@ -9,18 +9,18 @@ import Foundation
 import SWXMLHash
 
 public struct Entity {
-  let name: String
+  public let name: String
 
-  let documentVersion: String
-  let systemVersion: String
-  let minimumToolsVersion: String
-  let lastSavedToolsVersion: String
-  let attributes: [Attribute]
+  public let documentVersion: String
+  public let systemVersion: String
+  public let minimumToolsVersion: String
+  public let lastSavedToolsVersion: String
+  public let attributes: [Attribute]
 }
 
 extension Entity {
   
-  init(with node: XMLIndexer) throws {
+  public init(with node: XMLIndexer) throws {
     guard let name = node.element?.attribute(by: "name")?.text else {
       throw DataModelError.parserEntityNameError
     }

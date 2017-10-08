@@ -10,14 +10,14 @@ import FileKit
 import SWXMLHash
 
 public struct DataModel {
-  let entities: [Entity]
-  let path: Path
+  public let entities: [Entity]
+  public let path: Path
   private let root: XMLIndexer
   
-  init(with path: String) throws {
+  public init(with path: String) throws {
     let resolvedPath = Path(path).resolved
     let file = File<Data>.init(path: resolvedPath + "contents")
-
+    
     guard resolvedPath.pathExtension == DataModelKit.dataModelExtension else {
       throw DataModelError.targetIsNotAnXcdataModel
     }
@@ -27,7 +27,7 @@ public struct DataModel {
     guard let data = try? file.read() else {
       throw DataModelError.targetIsNotReadable
     }
-
+    
     self.path = resolvedPath
     self.root = SWXMLHash.parse(data)
     self.entities = self.root["model"]["entity"].all.flatMap { try? Entity(with: $0) }

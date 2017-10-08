@@ -9,17 +9,17 @@ import Foundation
 import SWXMLHash
 
 public struct Attribute {
-  let name: String
-  let optional: Bool
-  let indexed: Bool
-  let defaultValue: String?
-  let type: String
-  let userInfo: [UserInfo]
+  public let name: String
+  public let optional: Bool
+  public let indexed: Bool
+  public let defaultValue: String?
+  public let type: String
+  public let userInfo: [UserInfo]
 }
 
 extension Attribute {
   
-  init(with node: XMLIndexer) throws {
+  public init(with node: XMLIndexer) throws {
     guard let name = node.element?.attribute(by: "name")?.text else {
       throw DataModelError.parserAttributeNameError
     }
