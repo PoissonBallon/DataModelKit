@@ -24,4 +24,8 @@ public enum DataModelError: Error {
   // MARK: Parser UserInfo Error
   case parserUserInfoKeyError
   case parserUserInfoValueError
+  
+  // MARK: Parser Relationship Error
+  case parserRelationshipNameError
+  case parserRelationshipInverseError
 }

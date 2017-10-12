@@ -14,7 +14,7 @@ public struct Attribute {
   public let indexed: Bool
   public let defaultValue: String?
   public let type: String
-  public let userInfo: [UserInfo]
+  public let userInfos: [UserInfo]
 }
 
 extension Attribute {
@@ -29,9 +29,9 @@ extension Attribute {
     
     self.name = name
     self.type = type
-    self.optional = node.element?.attribute(by: "optional")?.text.toBool() ?? false
-    self.indexed = node.element?.attribute(by: "indexed")?.text.toBool() ?? false
+    self.optional = (node.element?.attribute(by: "optional")?.text == "YES") ? true : false
+    self.indexed = (node.element?.attribute(by: "indexed")?.text == "YES") ? true : false
     self.defaultValue = node.element?.attribute(by: "defaultValueString")?.text
-    self.userInfo = node["userInfo"].children.flatMap { try? UserInfo.init(with: $0) }
+    self.userInfos = node["userInfo"].children.flatMap { try? UserInfo.init(with: $0) }
   }
 }
