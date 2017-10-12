@@ -1,0 +1,334 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": null,
+      "symbol": "Attribute",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 31,
+      "symbol": "Attribute",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 32,
+      "symbol": "Attribute.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 33,
+      "symbol": "Attribute.optional",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 34,
+      "symbol": "Attribute.indexed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 35,
+      "symbol": "Attribute.defaultValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 36,
+      "symbol": "Attribute.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 37,
+      "symbol": "Attribute.userInfos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Attribute.swift",
+      "line": 42,
+      "symbol": "Attribute.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModel.swift",
+      "line": 36,
+      "symbol": "DataModel.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 30,
+      "symbol": "DataModelError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 33,
+      "symbol": "DataModelError.targetIsNotAnXcdataModel",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 34,
+      "symbol": "DataModelError.targetHaveNotContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 35,
+      "symbol": "DataModelError.targetIsNotReadable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 38,
+      "symbol": "DataModelError.parserEntityNameError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 41,
+      "symbol": "DataModelError.parserAttributeNameError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 42,
+      "symbol": "DataModelError.parserAttributeTypeError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 45,
+      "symbol": "DataModelError.parserUserInfoKeyError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 46,
+      "symbol": "DataModelError.parserUserInfoValueError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 49,
+      "symbol": "DataModelError.parserRelationshipNameError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelError.swift",
+      "line": 50,
+      "symbol": "DataModelError.parserRelationshipInverseError",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelKit.swift",
+      "line": 28,
+      "symbol": "DataModelKit",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/DataModelKit.swift",
+      "line": 29,
+      "symbol": "DataModelKit.dataModelExtension",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": null,
+      "symbol": "Entity",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": 31,
+      "symbol": "Entity",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": 32,
+      "symbol": "Entity.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": 33,
+      "symbol": "Entity.userInfos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": 34,
+      "symbol": "Entity.attributes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": 35,
+      "symbol": "Entity.relationships",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Entity.swift",
+      "line": 40,
+      "symbol": "Entity.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": null,
+      "symbol": "Relationship",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 31,
+      "symbol": "Relationship",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 32,
+      "symbol": "Relationship.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 33,
+      "symbol": "Relationship.destination",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 34,
+      "symbol": "Relationship.inverse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 35,
+      "symbol": "Relationship.userInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 36,
+      "symbol": "Relationship.toMany",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 37,
+      "symbol": "Relationship.toOne",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 38,
+      "symbol": "Relationship.optional",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 39,
+      "symbol": "Relationship.syncable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 40,
+      "symbol": "Relationship.ordered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/Relationship.swift",
+      "line": 44,
+      "symbol": "Relationship.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/UserInfo.swift",
+      "line": null,
+      "symbol": "UserInfo",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/UserInfo.swift",
+      "line": 31,
+      "symbol": "UserInfo",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/UserInfo.swift",
+      "line": 32,
+      "symbol": "UserInfo.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/UserInfo.swift",
+      "line": 33,
+      "symbol": "UserInfo.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Sources/DataModelKit/UserInfo.swift",
+      "line": 38,
+      "symbol": "UserInfo.init(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit"
+}
