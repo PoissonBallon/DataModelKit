@@ -33,7 +33,7 @@ import SWXMLHash
 public struct DataModel {
   private let root: XMLIndexer
   
-  public let path: Path   /// Path of the original file.xcdatamodel
+  public let path: String   /// Path of the original file.xcdatamodel
   public let entities: [Entity] /// Parsed model's entities
   public let documentVersion: String /// Version of file.xcdatamodel
   public let systemVersion: String /// System version of file.xcdatamodel
@@ -62,7 +62,7 @@ extension DataModel {
       throw DataModelError.targetIsNotReadable
     }
     
-    self.path = resolvedPath
+    self.path = resolvedPath.description
     self.root = SWXMLHash.parse(data)
     self.documentVersion = self.root["model"].element?.attribute(by: "documentVersion")?.text ?? ""
     self.systemVersion = self.root["model"].element?.attribute(by: "systemVersion")?.text ?? ""

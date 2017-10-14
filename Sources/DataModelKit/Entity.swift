@@ -29,7 +29,7 @@ import Foundation
 import SWXMLHash
 
 public struct Entity {
-  public let name: String
+  public let name: String 
   public let userInfos: [UserInfo]
   public let attributes: [Attribute]
   public let relationships: [Relationship]
