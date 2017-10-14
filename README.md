@@ -1,12 +1,7 @@
 <h3 align="center">
-  <a href="https://github.com/PoissonBallon/DataModelKit">
     <img src="Assets/data_model_kit_200.png" width="200" />
-    <br />
-    DataModelKit
-  </a>
 </h3>
 
-------
 
 # DataModelKit
 
