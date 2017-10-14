@@ -2,7 +2,7 @@
   <a href="https://github.com/PoissonBallon/DataModelKit">
     <img src="Assets/data_model_kit_200.png" width="200" />
     <br />
-    EasyRealm
+    DataModelKit
   </a>
 </h3>
 
