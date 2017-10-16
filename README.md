@@ -14,13 +14,13 @@
 [![Coverage Status](https://coveralls.io/repos/github/PoissonBallon/EasyRealm/badge.svg?branch=master)](https://coveralls.io/github/PoissonBallon/EasyRealm?branch=master)
 [![License](https://img.shields.io/cocoapods/l/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
 -->
-DataModelKit is a simple and light framework for parse and read __*.xcdatamodel__ files. It provides an API for navigate and explore __DataModel__
+DataModelKit is a simple and light framework to parse and read __*.xcdatamodel__ files. It provides an API to navigate and explore __DataModel__
 
 It's used in DataModelGen tools. _(available soon)_
 
 ## Usage
 
-### Init an DataModel Object
+### Init a DataModel Object
 
 ```swift
 import DataModelKit
@@ -58,10 +58,10 @@ github 'PoissonBallon/DataModelKit'
 
 ## API
 
-DataModelKit provide somes structs with attribute for exploite your DataModel 
+DataModelKit provide somes structs with attribute to exploite your DataModel 
 
 #### DataModel
-It's root object of your DataModel 
+It is the root object of your DataModel 
 
 ```swift
 
