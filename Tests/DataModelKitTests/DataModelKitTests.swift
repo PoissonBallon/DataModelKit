@@ -3,7 +3,7 @@ import XCTest
 
 class DataModelKitTests: XCTestCase {
   
-  static let pathTest = "/Users/allanvialatte/Developer/poissonballon-project/DataModelKit/Tests/RessourcesTest/Sample.xcdatamodel"
+  static let pathTest = "./Tests/RessourcesTest/Sample.xcdatamodel"
   static let sampleEntitiesCount = 6
   static let sampleArticleAttributesCount = 21
   static let sampleArticleFlagUserInfoCount = 3

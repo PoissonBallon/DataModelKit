@@ -7,14 +7,14 @@
 
 
 
-<!-- [![Version](https://img.shields.io/cocoapods/v/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
+[![Version](https://img.shields.io/cocoapods/v/DataModelKit.svg?style=flat)](https://cocoapods.org/pods/DataModelKit)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Platform](https://img.shields.io/cocoapods/p/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
-[![Build Status](https://travis-ci.org/PoissonBallon/EasyRealm.svg?branch=master)](https://travis-ci.org/PoissonBallon/EasyRealm)
-[![Swift 4](https://img.shields.io/badge/Language-Swift%203-orange.svg)](https://developer.apple.com/swift/)
-[![Coverage Status](https://coveralls.io/repos/github/PoissonBallon/EasyRealm/badge.svg?branch=master)](https://coveralls.io/github/PoissonBallon/EasyRealm?branch=master)
-[![License](https://img.shields.io/cocoapods/l/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
- -->
+[![Platform](https://img.shields.io/cocoapods/p/DataModelKit.svg?style=flat)](http://cocoapods.org/pods/DataModelKit)
+[![Build Status](https://travis-ci.org/PoissonBallon/DataModelKit.svg?branch=master)](https://travis-ci.org/PoissonBallon/DataModelKit)
+[![Swift 4](https://img.shields.io/badge/Language-Swift%204-orange.svg)](https://developer.apple.com/swift/)
+[![Coverage Status](https://coveralls.io/repos/github/PoissonBallon/DataModelKit/badge.svg?branch=master)](https://coveralls.io/github/PoissonBallon/DataModelKit?branch=master)
+[![License](https://img.shields.io/cocoapods/l/DataModelKit.svg?style=flat)](http://cocoapods.org/pods/DataModelKit)
+
 
 DataModelKit is a simple and light framework to parse and read __*.xcdatamodel__ files. It provides an API to navigate and explore __DataModel__
 

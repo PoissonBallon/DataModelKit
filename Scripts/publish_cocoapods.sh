@@ -1,2 +1,2 @@
-pod lib lint
-pod trunk push DataModelKit.podspec
+pod lib lint --verbose --allow-warnings
+pod trunk push DataModelKit.podspec --allow-warnings

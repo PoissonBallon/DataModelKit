@@ -1,0 +1,12 @@
+language: objective-c
+osx_image: xcode9.0
+xcode_project: DataModelKit.xcodeproj
+before_install:
+  - gem install slather --no-rdoc --no-ri --no-document --quiet
+
+script:
+- swift package generate-xcodeproj
+- swift test
+
+after_success:
+- slather
