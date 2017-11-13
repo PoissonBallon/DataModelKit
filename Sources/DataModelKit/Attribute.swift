@@ -38,7 +38,7 @@ public struct Attribute {
 }
 
 extension Attribute {
-  
+
   public init(with node: XMLIndexer) throws {
     guard let name = node.element?.attribute(by: "name")?.text else {
       throw DataModelError.parserAttributeNameError
@@ -46,7 +46,7 @@ extension Attribute {
     guard let type = node.element?.attribute(by: "attributeType")?.text else {
       throw DataModelError.parserAttributeTypeError
     }
-    
+
     self.name = name
     self.type = type
     self.optional = (node.element?.attribute(by: "optional")?.text == "YES") ? true : false

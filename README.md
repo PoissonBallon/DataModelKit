@@ -1,19 +1,21 @@
 <h3 align="center">
     <img src="Assets/data_model_kit_200.png" width="200" />
 </h3>
+<h1 align="center">
+  DataModelKit
+</h1>
 
 
-# DataModelKit
 
-<!--[![Version](https://img.shields.io/cocoapods/v/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
+<!-- [![Version](https://img.shields.io/cocoapods/v/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](https://img.shields.io/cocoapods/p/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
-
 [![Build Status](https://travis-ci.org/PoissonBallon/EasyRealm.svg?branch=master)](https://travis-ci.org/PoissonBallon/EasyRealm)
 [![Swift 4](https://img.shields.io/badge/Language-Swift%203-orange.svg)](https://developer.apple.com/swift/)
 [![Coverage Status](https://coveralls.io/repos/github/PoissonBallon/EasyRealm/badge.svg?branch=master)](https://coveralls.io/github/PoissonBallon/EasyRealm?branch=master)
 [![License](https://img.shields.io/cocoapods/l/EasyRealm.svg?style=flat)](http://cocoapods.org/pods/EasyRealm)
--->
+ -->
+
 DataModelKit is a simple and light framework to parse and read __*.xcdatamodel__ files. It provides an API to navigate and explore __DataModel__
 
 It's used in DataModelGen tools. _(available soon)_
@@ -48,7 +50,7 @@ pod "DataModelKit"
 github 'PoissonBallon/DataModelKit'
 ```
 
-#### SPM 
+#### SPM
 ```swift
  dependencies: [
     .package(url: "https://github.com/PoissonBallon/DataModelKit.git", .upToNextMinor(from:"1.0.0"))
@@ -58,10 +60,10 @@ github 'PoissonBallon/DataModelKit'
 
 ## API
 
-DataModelKit provide somes structs with attribute to exploite your DataModel 
+DataModelKit provide somes structs with attribute to exploite your DataModel
 
 #### DataModel
-It is the root object of your DataModel 
+It is the root object of your DataModel
 
 ```swift
 
@@ -79,7 +81,7 @@ public struct DataModel {
 
 ```swift
 public struct Entity {
-  public let name: String /// 
+  public let name: String ///
   public let userInfos: [UserInfo]
   public let attributes: [Attribute]
   public let relationships: [Relationship]
@@ -101,6 +103,18 @@ public struct Relationship {
   public let ordered: Bool
 }
 
+```
+
+#### Attribute
+```swift
+public struct Attribute {
+  public let name: String
+  public let optional: Bool
+  public let indexed: Bool
+  public let defaultValue: String?
+  public let type: String
+  public let userInfos: [UserInfo]
+}
 ```
 
 ## Author
