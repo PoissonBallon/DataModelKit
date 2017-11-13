@@ -9,7 +9,7 @@ let package = Package(
     .library(name: "DataModelKit", targets: ["DataModelKit"]),
     ],
   dependencies: [
-    .package(url:"https://github.com/drmohundro/SWXMLHash.git", from: "4.2.3"),
+    .package(url:"https://github.com/drmohundro/SWXMLHash.git", from: "4.2.5"),
     .package(url:"https://github.com/nvzqz/FileKit.git", from: "5.0.0")
   ],
   targets: [
