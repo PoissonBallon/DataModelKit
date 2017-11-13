@@ -1,0 +1,2 @@
+github "drmohundro/SWXMLHash" == "4.2.5"
+github "nvzqz/FileKit" == 5.0.0
