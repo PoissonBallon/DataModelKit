@@ -12,7 +12,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/DataModelKit.svg?style=flat)](http://cocoapods.org/pods/DataModelKit)
 [![Build Status](https://travis-ci.org/PoissonBallon/DataModelKit.svg?branch=master)](https://travis-ci.org/PoissonBallon/DataModelKit)
 [![Swift 4](https://img.shields.io/badge/Language-Swift%204-orange.svg)](https://developer.apple.com/swift/)
-[![Coverage Status](https://coveralls.io/repos/github/PoissonBallon/DataModelKit/badge.svg?branch=master)](https://coveralls.io/github/PoissonBallon/DataModelKit?branch=master)
+[![codecov](https://codecov.io/gh/PoissonBallon/DataModelKit/branch/master/graph/badge.svg)](https://codecov.io/gh/PoissonBallon/DataModelKit)
 [![License](https://img.shields.io/cocoapods/l/DataModelKit.svg?style=flat)](http://cocoapods.org/pods/DataModelKit)
 
 
