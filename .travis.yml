@@ -1,12 +1,11 @@
-language: objective-c
+language: generic
 osx_image: xcode9
-xcode_project: DataModelKit.xcodeproj
-before_install:
-  - gem install slather --no-rdoc --no-ri --no-document --quiet
 
 script:
-- swift package generate-xcodeproj
-- swift test
-
+- set -o pipefail
+- xcodebuild -version
+- xcodebuild -showsdks
+- swift package generate-xcodeproj --enable-code-coverage
+- sh Scripts/launch_tests.sh
 after_success:
-- slather
+  - bash <(curl -s https://codecov.io/bash)

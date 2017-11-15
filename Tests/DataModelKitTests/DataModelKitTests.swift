@@ -3,13 +3,12 @@ import XCTest
 
 class DataModelKitTests: XCTestCase {
   
-  static let pathTest = "./Tests/RessourcesTest/Sample.xcdatamodel"
+  static let pathTest = ProcessInfo.processInfo.environment["DATAMODEL_TEST_PATH"] ?? ""
   static let sampleEntitiesCount = 6
   static let sampleArticleAttributesCount = 21
   static let sampleArticleFlagUserInfoCount = 3
   static let sampleArticleRelationhipCount = 2
   static let sampleArticleParagraphRelationhipCount = 1
-  
   
   func testOpen() {
     let model = try? DataModel(with: DataModelKitTests.pathTest)
