@@ -1,4 +1,4 @@
-language: generic
+language: swift
 osx_image: xcode9
 
 script:
