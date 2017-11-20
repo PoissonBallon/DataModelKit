@@ -43,7 +43,7 @@ extension Attribute {
     guard let name = node.element?.attribute(by: "name")?.text else {
       throw DataModelError.parserAttributeNameError
     }
-    guard let type = node.element?.attribute(by: "attributeType")?.text else {
+    guard let tmp = node.element?.attribute(by: "attributeType")?.text, let type = AttributeType(rawValue: tmp) else {
       throw DataModelError.parserAttributeTypeError
     }
 
