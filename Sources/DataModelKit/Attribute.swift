@@ -33,7 +33,7 @@ public struct Attribute {
   public let optional: Bool
   public let indexed: Bool
   public let defaultValue: String?
-  public let type: String
+  public let type: AttributeType
   public let userInfos: [UserInfo]
 }
 
